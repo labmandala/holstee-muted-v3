@@ -1,0 +1,123 @@
+/****** BASE STYLES ******/
+
+html {
+    font-size: 38px; /* base font size */
+}
+
+body { 
+    font-family: "Roboto Slab", serif;
+    color: #594e44;
+    text-align: center;
+    background: #a5a5a5; 
+} 
+
+span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.highlight {
+    background-image: url(../img/cement-texture-2.jpg);
+}
+
+/****** GRID ******/
+
+#container {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    background: #594e44;
+}
+
+/* MOBILE UNIQUE */
+
+.item-d {
+    order: 1;
+}
+
+.item-g {
+    order: 2;
+}
+
+.item-i {
+    order: 1;
+}
+
+/* END MOBILE UNIQUE */
+
+div {
+    width: 200px;
+    height: 250px;
+    float: left; 
+    margin: 0px;
+    padding: 15px;
+/*    align-content: center; */
+}
+
+.block {
+    width: 400px;
+    height: 250px;
+    padding: 15px 30px;
+}
+
+.row {
+    clear: both;
+}
+
+/****** Body ******/
+
+.box-1-8 {
+    font-size: 1.15rem;
+}
+
+.box-5,
+.box-9 {
+    font-size: 0.85rem;
+}
+
+.pale {
+    background-color: #d8d8d8;
+}
+
+.dark {
+    color: #a5988c;
+    background-color: #26211d;
+}
+
+.mid-hue {
+    color: #26211d;
+    background-color: #a5988c;
+}
+
+/*** Mobile Styles ***/
+
+/*---------- TABLET ----------*/
+@media (min-width: 768px){
+
+    .item-d {
+        order: 0;
+    }
+
+    .item-g {
+        order: 0;
+    }
+
+    .item-i {
+        order: 0;
+    }
+}
+
+/*---------- Desktops ----------*/
+@media (min-width: 1200px){
+
+    #container {
+    border: 15px double #26211d;  
+    border-top: none;
+    border-bottom: none;
+    }
+
+}
